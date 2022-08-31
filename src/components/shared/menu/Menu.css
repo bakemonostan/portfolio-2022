@@ -1,0 +1,26 @@
+.nav-list {
+  background: rgba(4, 40, 63, 1);
+  width: 320px;
+  padding: 2rem;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  /* top: 6rem; */
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.nav-list li {
+  list-style: none;
+  color: rgba(214, 212, 142, 1);
+  line-height: 3;
+}
+
+a {
+  color: rgba(214, 212, 142, 1);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
