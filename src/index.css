@@ -27,8 +27,13 @@ h4 {
   font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p,
+input,
+label,
+textarea {
   font-family: 'Hind', sans-serif;
+  padding: 0.2rem 0;
+  outline: none;
 }
 
 img {

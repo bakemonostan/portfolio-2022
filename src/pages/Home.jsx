@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { BsGithub, BsLinkedin, BsTwitter, BsInstagram } from 'react-icons/bs';
 
 export const Wrapper = styled.div`
-  height: 100vh;
+  padding: 8rem 0;
   color: #d6d58e;
   text-align: center;
   margin: 0 auto;
