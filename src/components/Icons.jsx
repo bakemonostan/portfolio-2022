@@ -27,7 +27,7 @@ const Icons = ({ children }) => {
             scale: 0.5,
           }}
         >
-          <a href='/'>{children}</a>
+          <a href='*'>{children}</a>
         </motion.div>
       </IconContext.Provider>
     </Wrapper>

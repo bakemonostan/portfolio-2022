@@ -72,16 +72,40 @@ const Home = () => {
         animate={{ x: 0 }}
       >
         <Icons>
-          <BsGithub />
+          <a
+            href='https://github.com/bakemonostan'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <BsGithub />
+          </a>
         </Icons>
         <Icons>
-          <BsLinkedin />
+          <a
+            href='https://www.linkedin.com/in/omokhomionehis/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <BsLinkedin />
+          </a>
         </Icons>
         <Icons>
-          <BsTwitter />
+          <a
+            href='https://twitter.com/BakemonoStan'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <BsTwitter />
+          </a>
         </Icons>
         <Icons>
-          <BsInstagram />
+          <a
+            href='https://www.instagram.com/bakemono_stan/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <BsInstagram />
+          </a>
         </Icons>
       </motion.div>
     </Wrapper>
