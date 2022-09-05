@@ -75,6 +75,9 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const hideMenu = () => {
+    setMenu(false);
+  };
   const MoMenu = motion(Menu, { forwardMotionProps: true });
 
   return (
@@ -124,8 +127,8 @@ const Navbar = () => {
         <Link to='/projects' className='navlink'>
           Projects
         </Link>
-        <Link to='/contact' className='navlink'>
-          Contact Me
+        <Link to='/contact' className='navlink' onClick={hideMenu}>
+          Contact
         </Link>
 
         <AnimatePresence>
@@ -140,6 +143,7 @@ const Navbar = () => {
               animate={{ y: 250 }}
               initial={{ y: -200 }}
               exit={{ scale: [1.2, 1, 0] }}
+              hideMenu={hideMenu}
             />
           )}
         </AnimatePresence>

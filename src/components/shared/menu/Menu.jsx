@@ -11,22 +11,19 @@ const FancyLink = React.forwardRef(({ navigate, ...props }, ref) => {
   );
 });
 
-const Menu = React.forwardRef((props, ref) => {
+const Menu = React.forwardRef(({ hideMenu }, ref) => {
   return (
     <div ref={ref} className='nav-list'>
-      <Link to='/contact' component={FancyLink}>
-        Contact
+      <Link to='/' component={FancyLink} onClick={hideMenu}>
+        Home
       </Link>
-      <Link to='/contact' component={FancyLink}>
-        Contact
+      <Link to='/about' component={FancyLink} onClick={hideMenu}>
+        About
       </Link>
-      <Link to='/contact' component={FancyLink}>
-        Contact
+      <Link to='/projects' component={FancyLink} onClick={hideMenu}>
+        Projects
       </Link>
-      <Link to='/contact' component={FancyLink}>
-        Contact
-      </Link>
-      <Link to='/contact' component={FancyLink}>
+      <Link to='/contact' component={FancyLink} onClick={hideMenu}>
         Contact
       </Link>
     </div>
