@@ -26,7 +26,7 @@ const AboutWrapper = styled(Wrapper)`
   }
 
   @media (min-width: 1024px) {
-    padding: 20rem 0;
+    padding: 15rem 0;
 
     max-width: 1440px;
     text-align: left;

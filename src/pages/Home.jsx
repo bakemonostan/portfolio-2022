@@ -35,7 +35,7 @@ export const Wrapper = styled.div`
 
   @media (min-width: 835px) {
     max-width: 750px;
-    padding: 18rem 0;
+    padding: 12rem 0;
 
     span {
       color: rgba(219, 242, 38, 1);

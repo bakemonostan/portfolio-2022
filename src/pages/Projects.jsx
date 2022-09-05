@@ -19,8 +19,11 @@ const Grid = styled.div`
   grid-template-columns: repeat(1, 320px);
   padding: 2rem 0;
 
-  @media (min-width: 1025px) {
-    grid-template-columns: repeat(2, 420px);
+  @media (min-width: 580px) {
+    grid-template-columns: repeat(1, 480px);
+  }
+  @media (min-width: 1040px) {
+    grid-template-columns: repeat(2, 480px);
   }
 `;
 
