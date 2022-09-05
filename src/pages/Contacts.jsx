@@ -51,6 +51,10 @@ const Wrapper = styled.section`
     background-color: rgba(219, 242, 38, 1);
     font-weight: bold;
   }
+
+  @media (min-width: 865px) {
+    padding: 20rem 0;
+  }
 `;
 
 const Contacts = () => {
