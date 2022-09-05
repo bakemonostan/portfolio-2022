@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import logo from '../assets/images/Omion-06.jpg';
 const Wrapper = styled.section`
   padding: 8rem 1rem;
   margin: 0 auto;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 import { Wrapper } from './Home';
 import { Link } from 'react-router-dom';
 import Skills from './Skills';

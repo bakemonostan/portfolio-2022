@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 import Card from '../components/shared/Card';
 
 const Wrapper = styled.section`

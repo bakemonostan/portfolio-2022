@@ -10,16 +10,6 @@ import Menu from './shared/menu/Menu';
 
 import React from 'react';
 
-const FancyLink = React.forwardRef(({ navigate, ...props }, ref) => {
-  return (
-    <a ref={ref} {...props}>
-      {props.children}
-    </a>
-  );
-});
-
-const MoLink = motion(FancyLink);
-
 const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;

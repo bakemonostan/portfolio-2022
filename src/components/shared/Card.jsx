@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 import test from '../../assets/pexels-scott-webb-2117938_v5vcrh_c_scale,w_1966.jpg';
 
 const Wrapper = styled.div`
@@ -36,7 +35,7 @@ const Wrapper = styled.div`
 
   .links button {
     margin: 0.7rem;
-    padding: 0.7rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     border-radius: 15px;
     background: rgba(219, 242, 38, 1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
