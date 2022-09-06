@@ -25,7 +25,7 @@ const Wrapper = styled.div`
       transition: all 0.3s;
 
       &:hover {
-        background-color: rgba(0, 91, 82, 0.4);
+        background-color: rgba(0, 91, 82, 0.9);
         opacity: 1;
         top: 0;
       }
@@ -34,6 +34,10 @@ const Wrapper = styled.div`
       h2 {
         color: black;
         font-weight: bold;
+      }
+
+      p {
+        color: #d6d58e;
       }
     }
   }
@@ -45,7 +49,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
   }
 
   .links button {
@@ -59,9 +63,6 @@ const Wrapper = styled.div`
       font-weight: bold;
       font-size: 1rem;
     }
-  }
-
-  @media (min-width: 1025px) {
   }
 `;
 const Card = ({ preview, github, img, desc, title }) => {
@@ -83,14 +84,22 @@ const Card = ({ preview, github, img, desc, title }) => {
             transition: { duration: 0.1 },
           }}
           whileTap={{
-            scale: 0.5,
+            scale: 0.9,
           }}
         >
           <a href={preview} target='_blank' rel='noreferrer'>
             Live Preview
           </a>
         </motion.button>
-        <motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.1 },
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+        >
           <a href={github} target='_blank' rel='noreferrer'>
             Github Repo
           </a>

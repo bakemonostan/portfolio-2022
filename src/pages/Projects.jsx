@@ -10,7 +10,8 @@ const Wrapper = styled.section`
 
   h2 {
     color: rgba(158, 193, 49, 1);
-    font-size: 1.8rem;
+    font-size: 2rem;
+    padding-bottom: 3rem;
   }
 `;
 
@@ -26,24 +27,24 @@ const Projects = () => {
       <h2>Projects</h2>
       <CardWrapper>
         <Card
-          preview=''
-          github=''
+          preview='https://dojo-project-app.netlify.app/login'
+          github='https://github.com/bakemonostan/TheDojo'
           img={dojo}
-          desc='lorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[iorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i'
+          desc='A CRUD project managment  application with sign up, login in and authentication features. Users can comment on projects and filter through exisiting tasks. Technologies used: React, Firebase'
           title='TheDojo'
         />
         <Card
-          preview=''
-          github=''
+          preview='https://gym-app-pract.netlify.app/'
+          github='https://github.com/bakemonostan/gym-app'
           img={gym}
-          desc='lorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[iorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i'
+          desc='A web app that connects users to videos on fittness exercise.Makes use of multiple apis, filtering and pagination.  Technologies used: React, Apis, MUI'
           title="Gold's Gym"
         />
         <Card
-          preview=''
-          github=''
+          preview='https://bakemonostan.github.io/manage-landing-page/'
+          github='https://github.com/bakemonostan/manage-landing-page'
           img={manage}
-          desc='lorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[iorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i'
+          desc='A basic landing page gotten from FrontEnd Mentors. Technologises used: HTML, CSS, JS, Tailwind'
           title='Manage '
         />
       </CardWrapper>
