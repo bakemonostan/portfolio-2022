@@ -19,25 +19,24 @@ const Wrapper = styled.div`
     }
     figcaption {
       position: absolute;
-      top: 88%;
+      opacity: 0;
+      top: 0;
       height: 99.3%;
       border-radius: 10px 10px 0 0;
       transition: all 0.3s;
 
       &:hover {
-        background-color: rgba(0, 91, 82, 0.9);
+        background-color: rgba(0, 91, 82, 0.8);
         opacity: 1;
-        top: 0;
       }
 
       p,
       h2 {
-        color: black;
+        color: #d6d58e;
         font-weight: bold;
       }
-
-      p {
-        color: #d6d58e;
+      h2 {
+        padding-top: 2rem;
       }
     }
   }
