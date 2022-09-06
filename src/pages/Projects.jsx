@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import Card from '../components/shared/Card';
+import dojo from '../assets/projects-images/dojo.png';
+import gym from '../assets/projects-images/gym.png';
+import manage from '../assets/projects-images/manage.jpg';
 
 const Wrapper = styled.section`
   text-align: center;
@@ -11,34 +14,39 @@ const Wrapper = styled.section`
   }
 `;
 
-const Grid = styled.div`
-  display: grid;
-  margin: 0 auto;
-  justify-content: center;
-  gap: 4rem;
-  grid-template-columns: repeat(1, 320px);
-  padding: 2rem 0;
-
-  @media (min-width: 580px) {
-    grid-template-columns: repeat(1, 480px);
-  }
-  @media (min-width: 1040px) {
-    grid-template-columns: repeat(2, 480px);
-  }
+const CardWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem 1rem;
 `;
 
 const Projects = () => {
   return (
     <Wrapper className='projects'>
       <h2>Projects</h2>
-      <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </Grid>
+      <CardWrapper>
+        <Card
+          preview=''
+          github=''
+          img={dojo}
+          desc='lorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[iorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i'
+          title='TheDojo'
+        />
+        <Card
+          preview=''
+          github=''
+          img={gym}
+          desc='lorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[iorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i'
+          title="Gold's Gym"
+        />
+        <Card
+          preview=''
+          github=''
+          img={manage}
+          desc='lorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i orme ipsom posoem soroe jkgjagkjad  popepoerpe, p[iorme ipsom posoem soroe jkgjagkjad  popepoerpe, p[i'
+          title='Manage '
+        />
+      </CardWrapper>
     </Wrapper>
   );
 };

@@ -1,46 +1,60 @@
 import styled from 'styled-components';
-import test from '../../assets/pexels-scott-webb-2117938_v5vcrh_c_scale,w_1966.jpg';
+import { motion } from 'framer-motion';
 
 const Wrapper = styled.div`
   background: rgba(0, 91, 82, 1);
   border-radius: 15px;
   padding-bottom: 0.5rem;
+  max-width: 350px;
+  margin-inline: auto;
 
   figure {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    padding-bottom: 0.5rem;
+    position: relative;
+    overflow: hidden;
     img {
       border-radius: 10px 10px 0 0;
-      grid-column: 1/2;
-      grid-row: 1/3;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      width: 100%;
     }
     figcaption {
-      grid-column: 1/2;
-      grid-row: 2/3;
-      color: rgba(219, 242, 38, 1);
+      position: absolute;
+      top: 88%;
+      height: 99.3%;
+      border-radius: 10px 10px 0 0;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: rgba(0, 91, 82, 0.4);
+        opacity: 1;
+        top: 0;
+      }
+
+      p,
+      h2 {
+        color: black;
+        font-weight: bold;
+      }
     }
   }
   .split {
-    display: grid;
-    align-items: center;
-    justify-content: center;
   }
 
   .links {
+    padding: 1rem 0;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
+    gap: 0.5rem;
   }
 
   .links button {
-    margin: 0.7rem;
-    padding: 0.3rem 1.5rem;
-    border-radius: 15px;
+    padding: 0.5rem;
+    border-radius: 10px;
     background: rgba(219, 242, 38, 1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: none;
-    p {
+    a {
       color: rgba(4, 40, 63, 1);
       font-weight: bold;
       font-size: 1rem;
@@ -50,27 +64,37 @@ const Wrapper = styled.div`
   @media (min-width: 1025px) {
   }
 `;
-const Card = () => {
+const Card = ({ preview, github, img, desc, title }) => {
   return (
     <Wrapper>
       <div className='split'>
         <figure>
-          <img src={test} alt='/' />
+          <img src={img} alt='project preview' />
           <figcaption>
-            <h2>le project</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ab.
-            </p>
+            <h2>{title}</h2>
+            <p>{desc}</p>
           </figcaption>
         </figure>
       </div>
       <div className='links'>
-        <button>
-          <p>Live PreVue</p>
-        </button>
-        <button>
-          <p>Github Repo</p>
-        </button>
+        <motion.button
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.1 },
+          }}
+          whileTap={{
+            scale: 0.5,
+          }}
+        >
+          <a href={preview} target='_blank' rel='noreferrer'>
+            Live Preview
+          </a>
+        </motion.button>
+        <motion.button>
+          <a href={github} target='_blank' rel='noreferrer'>
+            Github Repo
+          </a>
+        </motion.button>
       </div>
     </Wrapper>
   );
