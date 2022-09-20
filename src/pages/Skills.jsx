@@ -10,7 +10,7 @@ const skills = [
   'NextJS',
   'Typescript',
   'MUI',
-  'Zustang',
+  'Zustand',
   'Webpack',
   'Babel',
   'Tailwind CSS',
