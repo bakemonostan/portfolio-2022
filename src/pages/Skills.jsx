@@ -8,11 +8,17 @@ const skills = [
   'React',
   'Redux',
   'NextJS',
+  'Typescript',
+  'MUI',
+  'Zustang',
+  'Webpack',
+  'Babel',
   'Tailwind CSS',
   'SASS',
   'Github',
   'Firebase',
   'MONGODB',
+  'Contentful',
 ];
 
 const Wrapper = styled.div`

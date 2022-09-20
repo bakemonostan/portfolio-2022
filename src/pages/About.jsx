@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import { Wrapper } from './Home';
 import { Link } from 'react-router-dom';
 import Skills from './Skills';
+import { motion } from 'framer-motion';
 
 const AboutWrapper = styled(Wrapper)`
   display: flex;
   flex-flow: row wrap;
   height: auto;
   padding: 4rem 0;
+  overflow-y: hidden;
 
   .about {
     flex: 0 1 620px;
@@ -41,7 +43,12 @@ const AboutWrapper = styled(Wrapper)`
 const About = () => {
   return (
     <AboutWrapper>
-      <div className='about'>
+      <motion.div
+        className='about'
+        transition={{ delay: 0.2, duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <h2>About ME</h2>
         <p>
           I'm a Frontend web developer committed to the timely delivery of
@@ -55,12 +62,17 @@ const About = () => {
           learn, and grow. Please contact me if you have a good position that
           suits my skills and experience.
         </p>
-      </div>
+      </motion.div>
 
-      <div className='skills'>
+      <motion.div
+        className='skills'
+        transition={{ delay: 0.3, duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <h2>Current Skills</h2>
         <Skills />
-      </div>
+      </motion.div>
     </AboutWrapper>
   );
 };
