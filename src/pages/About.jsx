@@ -7,7 +7,7 @@ const AboutWrapper = styled(Wrapper)`
   display: flex;
   flex-flow: row wrap;
   height: auto;
-  padding: 8rem 0;
+  padding: 4rem 0;
 
   .about {
     flex: 0 1 620px;
@@ -26,7 +26,7 @@ const AboutWrapper = styled(Wrapper)`
   }
 
   @media (min-width: 1024px) {
-    padding: 15rem 0;
+    padding: 6rem 0;
 
     max-width: 1440px;
     text-align: left;

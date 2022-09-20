@@ -53,7 +53,7 @@ const Wrapper = styled.section`
   }
 
   @media (min-width: 865px) {
-    padding: 20rem 0;
+    padding: 5rem 0;
   }
 `;
 
