@@ -56,7 +56,7 @@ const Projects = () => {
           preview='https://todo-taskify-app.netlify.app/'
           github='https://github.com/bakemonostan/ts-todo-app'
           img={taskify}
-          desc='Ah, the Todo app, every developer has been there. This one was built with typescript though sooooo, yeah. Take that, I guess'
+          desc='Ah, the Todo app, every developer has been there. This one was built with typescript though sooooo, yeah😊.'
           title='To-do App'
         />
         <Card
