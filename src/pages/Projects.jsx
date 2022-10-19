@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 import Card from '../components/shared/Card';
-import { dojo, url, filter, manage, gym, taskify } from '../assets';
+import {
+  dojo,
+  url,
+  filter,
+  manage,
+  gym,
+  taskify,
+  iptracker,
+  whereInTheWorld,
+  dvstd,
+} from '../assets';
 
 const Wrapper = styled.section`
   text-align: center;
@@ -18,6 +28,8 @@ const CardWrapper = styled.div`
   flex-flow: row wrap;
   gap: 3rem 1rem;
 `;
+
+// MAKE THIS SECTION DYNAMIC, CREATE A JSON FILE TO GET NEW PROJECTS INSTEAD OF HAVING TO ADD THEM HERE MANUALLY ALL THE TIME
 
 const Projects = () => {
   return (
@@ -64,7 +76,28 @@ const Projects = () => {
           github='https://github.com/bakemonostan/manage-landing-page'
           img={manage}
           desc='A basic landing page gotten from FrontEnd Mentors. Technologises used: HTML, CSS, JS, Tailwind'
-          title='Manage '
+          title='Manage'
+        />
+        <Card
+          preview='https://itrack-ips.netlify.app/'
+          github='https://github.com/bakemonostan/ip-tracker'
+          img={iptracker}
+          desc='An ip address tracking app using two separate APIs together to create an IP Address Tracking app. Built using VUE and Tailwind css'
+          title='IP Address Tracker'
+        />
+        <Card
+          preview='https://where-in-the-globe.netlify.app/'
+          github='https://github.com/bakemonostan/where-in-the-world'
+          img={whereInTheWorld}
+          desc='Integrating with the REST Countries API to pull country data and display it. Users can see all countries from the API on the homepage and search for a country using an input field. Built using VUE and Tailwind cs'
+          title='REST Countries API with color theme switcher'
+        />
+        <Card
+          preview='https://dvstd.vercel.app/'
+          github='https://github.com/bakemonostan/dvstd'
+          img={dvstd}
+          desc="A theme for an Architect's portfolio and blog using NextJs, Styled Components and The Contentful headless CMS. "
+          title='DVSTD'
         />
       </CardWrapper>
     </Wrapper>
