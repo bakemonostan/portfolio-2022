@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import placeholder from '../../assets/images/placeholder-300x202.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Wrapper = styled.div`
   background: rgba(0, 91, 82, 1);
@@ -70,7 +73,12 @@ const Card = ({ preview, github, img, desc, title }) => {
     <Wrapper>
       <div className='split'>
         <figure>
-          <img src={img} alt='project preview' />
+          <LazyLoadImage
+            src={img}
+            effect='blur'
+            alt='project image'
+            placeholderSrc={placeholder}
+          />
           <figcaption>
             <h2>{title}</h2>
             <p>{desc}</p>
