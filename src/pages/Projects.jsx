@@ -93,7 +93,7 @@ const Projects = () => {
           title='REST Countries API with color theme switcher'
         />
         <Card
-          preview='https://dvstd.vercel.app/'
+          preview='https://dvstd-demo.vercel.app/'
           github='https://github.com/bakemonostan/dvstd'
           img={dvstd}
           desc="A theme for an Architect's portfolio and blog using NextJs, Styled Components and The Contentful headless CMS. "
